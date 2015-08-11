@@ -8,17 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		67B87F87B8AACFEA9DDF522B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04D59912D6BC0125CAB36829 /* libPods.a */; };
+		6EC2D44B1B77C941005684A2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EEF392C1B72A672004C2C24 /* AppDelegate.m */; };
+		6EC2D44C1B77C941005684A2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EEF39291B72A672004C2C24 /* main.m */; };
+		6EC2D44D1B77C941005684A2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EEF39321B72A673004C2C24 /* ViewController.m */; };
+		6EC2D44E1B77C941005684A2 /* OneShot.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6EEF392E1B72A672004C2C24 /* OneShot.xcdatamodeld */; };
+		6EC2D4501B77C941005684A2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04D59912D6BC0125CAB36829 /* libPods.a */; };
+		6EC2D4551B77C941005684A2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EEF39371B72A673004C2C24 /* Images.xcassets */; };
 		6EEF392A1B72A672004C2C24 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EEF39291B72A672004C2C24 /* main.m */; };
 		6EEF392D1B72A672004C2C24 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EEF392C1B72A672004C2C24 /* AppDelegate.m */; };
 		6EEF39301B72A672004C2C24 /* OneShot.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6EEF392E1B72A672004C2C24 /* OneShot.xcdatamodeld */; };
 		6EEF39331B72A673004C2C24 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EEF39321B72A673004C2C24 /* ViewController.m */; };
-		6EEF39361B72A673004C2C24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EEF39341B72A673004C2C24 /* Main.storyboard */; };
 		6EEF39381B72A673004C2C24 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EEF39371B72A673004C2C24 /* Images.xcassets */; };
-		6EEF393B1B72A673004C2C24 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EEF39391B72A673004C2C24 /* LaunchScreen.xib */; };
 		6EEF39471B72A673004C2C24 /* OneShotTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EEF39461B72A673004C2C24 /* OneShotTests.m */; };
-		6EEF39581B74DC4F004C2C24 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6EEF395A1B74DC4F004C2C24 /* Localizable.strings */; };
 		6EEF39651B7522F4004C2C24 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6EEF39671B7522F4004C2C24 /* InfoPlist.strings */; };
-		6EEF396A1B7522F4004C2C24 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6EEF396C1B7522F4004C2C24 /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,9 @@
 /* Begin PBXFileReference section */
 		04D59912D6BC0125CAB36829 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D37D06452405FD3CB83521C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		6EC2D45E1B77C941005684A2 /* OneShot beta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OneShot beta.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EC2D4651B77CF21005684A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = "Base.lproj/Info-beta.plist"; sourceTree = "<group>"; };
+		6EC2D4701B79C810005684A2 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
 		6EEF39241B72A672004C2C24 /* OneShot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneShot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EEF39291B72A672004C2C24 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6EEF392B1B72A672004C2C24 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -48,7 +53,6 @@
 		6EEF39451B72A673004C2C24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6EEF39461B72A673004C2C24 /* OneShotTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OneShotTests.m; sourceTree = "<group>"; };
 		6EEF39591B74DC4F004C2C24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
-		6EEF39601B7521E0004C2C24 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
 		6EEF39611B7521E0004C2C24 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		6EEF39621B7521E0004C2C24 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		6EEF39661B7522F4004C2C24 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
@@ -58,6 +62,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		6EC2D44F1B77C941005684A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EC2D4501B77C941005684A2 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6EEF39211B72A672004C2C24 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -101,6 +113,7 @@
 			children = (
 				6EEF39241B72A672004C2C24 /* OneShot.app */,
 				6EEF39401B72A673004C2C24 /* OneShotTests.xctest */,
+				6EC2D45E1B77C941005684A2 /* OneShot beta.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -124,8 +137,9 @@
 		6EEF39271B72A672004C2C24 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				6EEF396C1B7522F4004C2C24 /* InfoPlist.strings */,
+				6EC2D4641B77CF21005684A2 /* Info-beta.plist */,
 				6EEF396E1B75238D004C2C24 /* Info.plist */,
+				6EEF396C1B7522F4004C2C24 /* InfoPlist.strings */,
 				6EEF39291B72A672004C2C24 /* main.m */,
 				6EEF395A1B74DC4F004C2C24 /* Localizable.strings */,
 			);
@@ -161,6 +175,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		6EC2D4481B77C941005684A2 /* OneShot beta */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6EC2D45B1B77C941005684A2 /* Build configuration list for PBXNativeTarget "OneShot beta" */;
+			buildPhases = (
+				6EC2D4491B77C941005684A2 /* Check Pods Manifest.lock */,
+				6EC2D44A1B77C941005684A2 /* Sources */,
+				6EC2D44F1B77C941005684A2 /* Frameworks */,
+				6EC2D4511B77C941005684A2 /* Resources */,
+				6EC2D4571B77C941005684A2 /* Build Number */,
+				6EC2D4581B77C941005684A2 /* Version Number */,
+				6EC2D4591B77C941005684A2 /* Copy Pods Resources */,
+				6EC2D45A1B77C941005684A2 /* Fabric */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OneShot beta";
+			productName = OneShot;
+			productReference = 6EC2D45E1B77C941005684A2 /* OneShot beta.app */;
+			productType = "com.apple.product-type.application";
+		};
 		6EEF39231B72A672004C2C24 /* OneShot */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6EEF394A1B72A673004C2C24 /* Build configuration list for PBXNativeTarget "OneShot" */;
@@ -172,6 +208,7 @@
 				6EEF395E1B74E3C2004C2C24 /* Build Number */,
 				6EEF395F1B74E983004C2C24 /* Version Number */,
 				19675E60844CBB13FB5D0049 /* Copy Pods Resources */,
+				6EC2D4281B771920005684A2 /* Fabric */,
 			);
 			buildRules = (
 			);
@@ -211,6 +248,7 @@
 				TargetAttributes = {
 					6EEF39231B72A672004C2C24 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = GW5Z7US9NS;
 					};
 					6EEF393F1B72A673004C2C24 = {
 						CreatedOnToolsVersion = 6.4;
@@ -234,20 +272,25 @@
 			targets = (
 				6EEF39231B72A672004C2C24 /* OneShot */,
 				6EEF393F1B72A673004C2C24 /* OneShotTests */,
+				6EC2D4481B77C941005684A2 /* OneShot beta */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		6EC2D4511B77C941005684A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EC2D4551B77C941005684A2 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6EEF39221B72A672004C2C24 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6EEF39361B72A673004C2C24 /* Main.storyboard in Resources */,
-				6EEF39581B74DC4F004C2C24 /* Localizable.strings in Resources */,
-				6EEF393B1B72A673004C2C24 /* LaunchScreen.xib in Resources */,
 				6EEF39381B72A673004C2C24 /* Images.xcassets in Resources */,
-				6EEF396A1B7522F4004C2C24 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +319,92 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		6EC2D4281B771920005684A2 /* Fabric */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Fabric;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/Fabric.framework/run\" 712bb567dfea2bd1fb5d31f9a21684b29606c0fb 02ee4df0c78bba95910c8d89a5f68bed1cb88194067999f16ac28a87d5daba5c";
+		};
+		6EC2D4491B77C941005684A2 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6EC2D4571B77C941005684A2 /* Build Number */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Build Number";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "buildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"";
+		};
+		6EC2D4581B77C941005684A2 /* Version Number */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Version Number";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "VERSIONNUM=$(/usr/libexec/PlistBuddy -c \"Print CFBundleShortVersionString\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\nNEWSUBVERSION=`echo $VERSIONNUM | awk -F \".\" '{print $3}'`\nNEWSUBVERSION=$(($NEWSUBVERSION + 1))\nNEWVERSIONSTRING=`echo $VERSIONNUM | awk -F \".\" '{print $1 \".\" $2 \".'$NEWSUBVERSION'\" }'`\n/usr/libexec/PlistBuddy -c \"Set :CFBundleShortVersionString $NEWVERSIONSTRING\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"";
+		};
+		6EC2D4591B77C941005684A2 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6EC2D45A1B77C941005684A2 /* Fabric */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Fabric;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/Fabric.framework/run\" 712bb567dfea2bd1fb5d31f9a21684b29606c0fb 02ee4df0c78bba95910c8d89a5f68bed1cb88194067999f16ac28a87d5daba5c";
 		};
 		6EEF395E1B74E3C2004C2C24 /* Build Number */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -323,6 +452,17 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		6EC2D44A1B77C941005684A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EC2D44B1B77C941005684A2 /* AppDelegate.m in Sources */,
+				6EC2D44C1B77C941005684A2 /* main.m in Sources */,
+				6EC2D44D1B77C941005684A2 /* ViewController.m in Sources */,
+				6EC2D44E1B77C941005684A2 /* OneShot.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6EEF39201B72A672004C2C24 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -353,11 +493,19 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		6EC2D4641B77CF21005684A2 /* Info-beta.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6EC2D4651B77CF21005684A2 /* Base */,
+			);
+			name = "Info-beta.plist";
+			sourceTree = "<group>";
+		};
 		6EEF39341B72A673004C2C24 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				6EEF39351B72A673004C2C24 /* Base */,
-				6EEF39601B7521E0004C2C24 /* zh-Hant */,
+				6EC2D4701B79C810005684A2 /* zh-Hant */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -407,6 +555,30 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		6EC2D45C1B77C941005684A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D37D06452405FD3CB83521C /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "OneShot/Base.lproj/Info-beta.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "OneShot beta";
+			};
+			name = Debug;
+		};
+		6EC2D45D1B77C941005684A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD62539A3B82CC8CB6AE8C85 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "OneShot/Base.lproj/Info-beta.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "OneShot beta";
+			};
+			name = Release;
+		};
 		6EEF39481B72A673004C2C24 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -492,6 +664,7 @@
 			baseConfigurationReference = 3D37D06452405FD3CB83521C /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = OneShot/Base.lproj/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -503,6 +676,7 @@
 			baseConfigurationReference = FD62539A3B82CC8CB6AE8C85 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = OneShot/Base.lproj/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -546,6 +720,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		6EC2D45B1B77C941005684A2 /* Build configuration list for PBXNativeTarget "OneShot beta" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EC2D45C1B77C941005684A2 /* Debug */,
+				6EC2D45D1B77C941005684A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		6EEF391F1B72A672004C2C24 /* Build configuration list for PBXProject "OneShot" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
