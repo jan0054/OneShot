@@ -10,10 +10,13 @@
 #import <Fabric/Fabric.h>
 #import <Crashlytics/Crashlytics.h>
 #import <TwitterKit/TwitterKit.h>
+#import <FBSDKCoreKit.h>
+#import <MBProgressHUD.h>
+
+NSString * const OS_APP_HUD_HIDDEN = @"OS_APP_HUD_HIDDEN";
 
 
-
-@interface AppDelegate ()
+@interface AppDelegate ()<MBProgressHUDDelegate>
 
 @end
 
@@ -23,10 +26,15 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     [Fabric with:@[CrashlyticsKit, TwitterKit]];
-
     
+    [UINavigationBar appearance].backgroundColor = [AppDelegate primaryColor];
+    [[UINavigationBar appearance] setTitleTextAttributes:@{
+                                                          NSForegroundColorAttributeName: [AppDelegate secondaryTextColor]
+                                                          
+                                                          }];
     
-    return YES;
+    return [[FBSDKApplicationDelegate sharedInstance] application:application
+                                    didFinishLaunchingWithOptions:launchOptions];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
@@ -45,6 +53,9 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    
+    [FBSDKAppEvents activateApp];
+    
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {
@@ -118,6 +129,22 @@
     return _managedObjectContext;
 }
 
+- (BOOL)application:(UIApplication *)application
+            openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication
+         annotation:(id)annotation {
+    
+    DLog(@"sourceApplication: %@", sourceApplication);
+    DLog(@"annotation: %@", annotation);
+    DLog(@"openURL: %@", url);
+    
+    return [[FBSDKApplicationDelegate sharedInstance] application:application
+                                                          openURL:url
+                                                sourceApplication:sourceApplication
+                                                       annotation:annotation];
+}
+
+
 #pragma mark - Core Data Saving support
 
 - (void)saveContext {
@@ -132,5 +159,117 @@
         }
     }
 }
+
+
+
+
+#pragma mark - Utility
++ (UIColor *)darkPrimaryColor {
+    return [UIColor colorWithHex:@"#303F9F"];
+}
++ (UIColor *)primaryColor {
+    return [UIColor colorWithHex:@"#3F51B5"];
+}
++ (UIColor *)lightPrimaryColor {
+    return [UIColor colorWithHex:@"#C5CA19"];
+}
++ (UIColor *)iconColor {
+    return [UIColor colorWithHex:@"#FFFFFF"];
+}
++ (UIColor *)primaryTextColor {
+    return [UIColor colorWithHex:@"#212121"];
+}
++ (UIColor *)accentColor {
+    return [UIColor colorWithHex:@"#FF5722"];
+}
++ (UIColor *)secondaryTextColor {
+    return [UIColor colorWithHex:@"#727272"];
+}
++ (UIColor *)dividerColor {
+    return [UIColor colorWithHex:@"#B6B6B6"];
+}
+
++ (CGFloat)screenWidth {
+    return [[UIScreen mainScreen] bounds].size.width;
+}
+
++ (CGFloat)screenHeight {
+    return [[UIScreen mainScreen] bounds].size.height;
+}
+
++ (AppDelegate *)getDelegate {
+    return (AppDelegate *)[UIApplication sharedApplication].delegate;
+}
+
+
+
+#pragma mark - MBProgressHUD
+
++ (MBProgressHUD *)sharedHud {
+    static MBProgressHUD *hud;
+    static dispatch_once_t onceToken;
+
+    
+    dispatch_once(&onceToken, ^{
+        hud = [[MBProgressHUD alloc] initWithWindow:[AppDelegate getDelegate].window];
+    });
+    
+    hud.delegate = [AppDelegate getDelegate];
+    
+    return hud;
+}
+
+- (void)showHud {
+    MBProgressHUD *hud = [AppDelegate sharedHud];
+    if (self.window) {
+        [self.window addSubview:hud];
+    }
+
+    hud.mode = MBProgressHUDModeIndeterminate;
+    [hud show:true];
+
+    
+}
+
+- (void)showHudWithTitle:(NSString *)title withDetailText:(NSString *)detailText {
+    MBProgressHUD *hud = [AppDelegate sharedHud];
+    if (self.window) {
+        [self.window addSubview:hud];
+    }
+    hud.customView = nil;
+    hud.mode = MBProgressHUDModeIndeterminate;
+    hud.detailsLabelText = detailText;
+    hud.labelText = title;
+    [hud show:true];
+    
+}
+
+
+- (void)hideHud {
+    MBProgressHUD *hud = [AppDelegate sharedHud];
+    [hud hide:true];
+//    hud.customView = nil;
+//    hud.detailsLabelText = nil;
+//    hud.labelText = nil;
+}
+- (void)hideHudWithDelay:(NSTimeInterval)delay {
+    UIImageView *iv = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"OK"]];
+    MBProgressHUD *hud = [AppDelegate sharedHud];
+    hud.customView = iv;
+    hud.mode = MBProgressHUDModeCustomView;
+    [hud hide:true afterDelay:delay];
+}
+
+#pragma mark - MBProgressHUDDelegate
+- (void)hudWasHidden:(MBProgressHUD *)hud {
+    if ([hud isEqual:[AppDelegate sharedHud]]) {
+        hud.customView = nil;
+        hud.detailsLabelText = nil;
+        hud.labelText = nil;
+        [NC postNotificationName:OS_APP_HUD_HIDDEN object:self userInfo:@{@"hud":hud}];
+    }
+}
+
+
 
 @end

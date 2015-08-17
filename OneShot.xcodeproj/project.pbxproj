@@ -8,6 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		67B87F87B8AACFEA9DDF522B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04D59912D6BC0125CAB36829 /* libPods.a */; };
+		6E6A4E741B7F712400884A7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EEF39341B72A673004C2C24 /* Main.storyboard */; };
+		6E6A4E751B7F712500884A7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EEF39341B72A673004C2C24 /* Main.storyboard */; };
+		6E6A4E791B7FA1EF00884A7A /* OSTabBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E6A4E781B7FA1EF00884A7A /* OSTabBarVC.m */; };
+		6E6A4E7A1B7FA1EF00884A7A /* OSTabBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E6A4E781B7FA1EF00884A7A /* OSTabBarVC.m */; };
+		6E785C641B80D129005C9A08 /* OSFullScreenNavVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E785C631B80D129005C9A08 /* OSFullScreenNavVC.m */; };
+		6E785C651B80D129005C9A08 /* OSFullScreenNavVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E785C631B80D129005C9A08 /* OSFullScreenNavVC.m */; };
+		6E785C6C1B80EC5A005C9A08 /* CreatePostVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E785C6B1B80EC5A005C9A08 /* CreatePostVC.m */; };
+		6E785C6D1B80EC5A005C9A08 /* CreatePostVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E785C6B1B80EC5A005C9A08 /* CreatePostVC.m */; };
+		6E785C711B80FBC4005C9A08 /* sample_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6E785C6F1B80FBC4005C9A08 /* sample_2.jpg */; };
+		6E785C721B80FBC4005C9A08 /* sample_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6E785C6F1B80FBC4005C9A08 /* sample_2.jpg */; };
+		6E785C731B80FBC4005C9A08 /* sample_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6E785C701B80FBC4005C9A08 /* sample_1.jpg */; };
+		6E785C741B80FBC4005C9A08 /* sample_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6E785C701B80FBC4005C9A08 /* sample_1.jpg */; };
 		6EC2D44B1B77C941005684A2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EEF392C1B72A672004C2C24 /* AppDelegate.m */; };
 		6EC2D44C1B77C941005684A2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EEF39291B72A672004C2C24 /* main.m */; };
 		6EC2D44D1B77C941005684A2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EEF39321B72A673004C2C24 /* ViewController.m */; };
@@ -36,6 +48,15 @@
 /* Begin PBXFileReference section */
 		04D59912D6BC0125CAB36829 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D37D06452405FD3CB83521C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		6E6A4E761B7F9B6400884A7A /* OneShot.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneShot.pch; sourceTree = "<group>"; };
+		6E6A4E771B7FA1EF00884A7A /* OSTabBarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSTabBarVC.h; sourceTree = "<group>"; };
+		6E6A4E781B7FA1EF00884A7A /* OSTabBarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSTabBarVC.m; sourceTree = "<group>"; };
+		6E785C621B80D129005C9A08 /* OSFullScreenNavVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSFullScreenNavVC.h; sourceTree = "<group>"; };
+		6E785C631B80D129005C9A08 /* OSFullScreenNavVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSFullScreenNavVC.m; sourceTree = "<group>"; };
+		6E785C6A1B80EC5A005C9A08 /* CreatePostVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreatePostVC.h; sourceTree = "<group>"; };
+		6E785C6B1B80EC5A005C9A08 /* CreatePostVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreatePostVC.m; sourceTree = "<group>"; };
+		6E785C6F1B80FBC4005C9A08 /* sample_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sample_2.jpg; sourceTree = "<group>"; };
+		6E785C701B80FBC4005C9A08 /* sample_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sample_1.jpg; sourceTree = "<group>"; };
 		6EC2D45E1B77C941005684A2 /* OneShot beta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OneShot beta.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EC2D4651B77CF21005684A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = "Base.lproj/Info-beta.plist"; sourceTree = "<group>"; };
 		6EC2D4701B79C810005684A2 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
@@ -97,6 +118,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		6E785C6E1B80FB8A005C9A08 /* sample */ = {
+			isa = PBXGroup;
+			children = (
+				6E785C6F1B80FBC4005C9A08 /* sample_2.jpg */,
+				6E785C701B80FBC4005C9A08 /* sample_1.jpg */,
+			);
+			name = sample;
+			sourceTree = "<group>";
+		};
 		6EEF391B1B72A672004C2C24 = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +160,12 @@
 				6EEF39391B72A673004C2C24 /* LaunchScreen.xib */,
 				6EEF392E1B72A672004C2C24 /* OneShot.xcdatamodeld */,
 				6EEF39271B72A672004C2C24 /* Supporting Files */,
+				6E6A4E771B7FA1EF00884A7A /* OSTabBarVC.h */,
+				6E6A4E781B7FA1EF00884A7A /* OSTabBarVC.m */,
+				6E785C621B80D129005C9A08 /* OSFullScreenNavVC.h */,
+				6E785C631B80D129005C9A08 /* OSFullScreenNavVC.m */,
+				6E785C6A1B80EC5A005C9A08 /* CreatePostVC.h */,
+				6E785C6B1B80EC5A005C9A08 /* CreatePostVC.m */,
 			);
 			path = OneShot;
 			sourceTree = "<group>";
@@ -137,11 +173,13 @@
 		6EEF39271B72A672004C2C24 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6E785C6E1B80FB8A005C9A08 /* sample */,
 				6EC2D4641B77CF21005684A2 /* Info-beta.plist */,
 				6EEF396E1B75238D004C2C24 /* Info.plist */,
 				6EEF396C1B7522F4004C2C24 /* InfoPlist.strings */,
 				6EEF39291B72A672004C2C24 /* main.m */,
 				6EEF395A1B74DC4F004C2C24 /* Localizable.strings */,
+				6E6A4E761B7F9B6400884A7A /* OneShot.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -283,6 +321,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6EC2D4551B77C941005684A2 /* Images.xcassets in Resources */,
+				6E785C741B80FBC4005C9A08 /* sample_1.jpg in Resources */,
+				6E785C721B80FBC4005C9A08 /* sample_2.jpg in Resources */,
+				6E6A4E751B7F712500884A7A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +332,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6EEF39381B72A673004C2C24 /* Images.xcassets in Resources */,
+				6E785C731B80FBC4005C9A08 /* sample_1.jpg in Resources */,
+				6E785C711B80FBC4005C9A08 /* sample_2.jpg in Resources */,
+				6E6A4E741B7F712400884A7A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,6 +501,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6EC2D44B1B77C941005684A2 /* AppDelegate.m in Sources */,
+				6E785C651B80D129005C9A08 /* OSFullScreenNavVC.m in Sources */,
+				6E6A4E7A1B7FA1EF00884A7A /* OSTabBarVC.m in Sources */,
+				6E785C6D1B80EC5A005C9A08 /* CreatePostVC.m in Sources */,
 				6EC2D44C1B77C941005684A2 /* main.m in Sources */,
 				6EC2D44D1B77C941005684A2 /* ViewController.m in Sources */,
 				6EC2D44E1B77C941005684A2 /* OneShot.xcdatamodeld in Sources */,
@@ -468,6 +515,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6EEF392D1B72A672004C2C24 /* AppDelegate.m in Sources */,
+				6E785C641B80D129005C9A08 /* OSFullScreenNavVC.m in Sources */,
+				6E6A4E791B7FA1EF00884A7A /* OSTabBarVC.m in Sources */,
+				6E785C6C1B80EC5A005C9A08 /* CreatePostVC.m in Sources */,
 				6EEF392A1B72A672004C2C24 /* main.m in Sources */,
 				6EEF39331B72A673004C2C24 /* ViewController.m in Sources */,
 				6EEF39301B72A672004C2C24 /* OneShot.xcdatamodeld in Sources */,
@@ -604,6 +654,8 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = OneShot/OneShot.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -646,6 +698,8 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = OneShot/OneShot.pch;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
